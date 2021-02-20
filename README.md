@@ -1,19 +1,13 @@
 # happyquiz
-
-## Project setup
+## 说明
 ```
-npm install
+一个简单的vue-router+vuex的练习项目
+开发环境：windows10,nodev14.5.0,Chrome88.0,vscode
+本项目参考：[vue2-happyfri](https://github.com/bailicangdu/vue2-happyfri)
 ```
-
-### Compiles and hot-reloads for development
+## 项目启动
 ```
+cd happyquiz
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
