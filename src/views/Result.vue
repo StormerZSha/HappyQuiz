@@ -1,9 +1,8 @@
 <template>
-  <div>
-      你的选择是：{{$store.state.yourChoose}}
-      
-      得分：{{result}}
-      <button @click="yourResult">查看得分</button>
+  <div class="result"> 
+      <div class="grade">
+        <span>得分：{{result}}</span>
+      </div>      
   </div>
 </template>
 
@@ -26,11 +25,32 @@ export default {
          }
      }
    },
+   created(){
+            this.yourResult();    
+   }
    
 
 }
 </script>
 
 <style>
-
+ .result{
+     color: #fff;
+ }
+ .grade{
+     width: 338px;
+     height: 364px;
+     background-image: url('../assets/grade.png');
+     position: relative;
+     left: 50%;
+     margin-left: -180px;
+     margin-top: 40px;
+ }
+ .grade span{
+     color: #000;
+     position: absolute;
+     bottom: 20%;
+     left: 35%;
+     font-size: 30px;
+ }
 </style>
