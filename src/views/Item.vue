@@ -9,8 +9,8 @@
               {{ans.answerItem}}
           </li>
       </ul>
-      <router-link to="/result" v-if="isActive==$store.state.quizlist.length">提交</router-link>
-      <a @click="nextQuiz(item.quizId)" v-else >下一题</a>
+      <router-link to="/result" v-if="isActive==$store.state.quizlist.length" tag="button">提交</router-link>
+      <button @click="nextQuiz(item.quizId)" v-else >下一题</button>
   </div>
 </div>
   
@@ -57,8 +57,8 @@ export default {
     color: #fff;
     position: absolute;
     top: 25%;
-    left: 40%;
-    width: 100px;
+    left: 33%;
+    width: 155px;
     height: 200px;
 }
 .itemquizId{
@@ -87,10 +87,13 @@ li{
 .choosed{
     background-color: #f00;
 }
-a{
-    text-decoration: none;
+button{
+    width: 100px;
+    height: 50px;
     color: #fff;
+    font-size: 18px;
     position: absolute;
     bottom: -20%;
+    background-color: #5e5e5e;
 }
 </style>

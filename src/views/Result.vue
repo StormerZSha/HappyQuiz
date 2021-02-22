@@ -11,7 +11,8 @@ export default {
    name:'Result',
    data(){
        return{
-           result:0
+           result:0,
+           appra:["快滚去学习","勉勉强强及格了呢","不错还需努力","恭喜你满分"],
        }
    },
    methods:{

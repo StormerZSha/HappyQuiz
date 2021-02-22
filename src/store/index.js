@@ -58,9 +58,87 @@ export default new Vuex.Store({
             isTrue:false
           }
         ]
+      },
+      {
+        quizId:3,
+        quizItem:"1x1=?",
+        quizAnswer:[
+          {
+            answerId:1,
+            answerItem:"0",
+            isTrue:false
+          },
+          {
+            answerId:2,
+            answerItem:"1",
+            isTrue:true
+          },
+          {
+            answerId:3,
+            answerItem:"2",
+            isTrue:false
+          },
+          {
+            answerId:4,
+            answerItem:"3",
+            isTrue:false
+          }
+        ]
+      },
+      {
+        quizId:4,
+        quizItem:"1/1=?",
+        quizAnswer:[
+          {
+            answerId:1,
+            answerItem:"0",
+            isTrue:false
+          },
+          {
+            answerId:2,
+            answerItem:"1",
+            isTrue:true
+          },
+          {
+            answerId:3,
+            answerItem:"2",
+            isTrue:false
+          },
+          {
+            answerId:4,
+            answerItem:"3",
+            isTrue:false
+          }
+        ]
+      },
+      {
+        quizId:5,
+        quizItem:"以下那句话是正确的?",
+        quizAnswer:[
+          {
+            answerId:1,
+            answerItem:"我是错误答案",
+            isTrue:false
+          },
+          {
+            answerId:2,
+            answerItem:"第一个是对",
+            isTrue:false
+          },
+          {
+            answerId:3,
+            answerItem:"第四个是对的",
+            isTrue:false
+          },
+          {
+            answerId:4,
+            answerItem:"我是正确答案",
+            isTrue:true
+          }
+        ]
       }
     ],
-    trueAnswer:[3,1]
+    trueAnswer:[3,1,2,2,4]
   },
   getters:{
   },
